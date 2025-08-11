@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Food Menu with Cart</title>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Food Menu</h1>
+</header>
+
+<section class="filters">
+    <h2>Filter by Category</h2>
+    <label><input type="radio" name="category" checked> All</label>
+    <label><input type="radio" name="category"> Veg</label>
+    <label><input type="radio" name="category"> Non-Veg</label>
+    <div class="price-range">
+        <label for="price">Max Price: </label>
+        <input type="range" id="price" min="100" max="1000" value="500">
+    </div>
+</section>
+
+<section class="menu">
+    <div class="dish-card veg">
+        <img src="pasta.jpeg" alt="Pasta">
+        <h3>Pasta</h3>
+        <p class="price">₹250</p>
+        <div class="ingredients">Cheese, Tomato, Basil</div>
+        <button>Add to Cart</button>
+    </div>
+    
+    <div class="dish-card non-veg">
+        <img src="pizzza.jpeg" alt="Pizza">
+        <h3>Pizza</h3>
+        <p class="price">₹450</p>
+        <div class="ingredients">Cheese, Olives, Pepperoni</div>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="dish-card veg">
+        <img src="burger.jpeg" alt="Burger">
+        <h3>Burger</h3>
+        <p class="price">₹150</p>
+        <div class="ingredients">Bun, Patty, Lettuce</div>
+        <button>Add to Cart</button>
+    </div>
+</section>
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p><strong>Total:</strong> ₹<span id="total">0</span></p>
+    <button>Buy Now</button>
+</section>
+
+<footer>
+    &copy; 2025 Delicious Food. All rights reserved.
+</footer>
+
+</body>
+</html>
 
