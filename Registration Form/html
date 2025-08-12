@@ -47,16 +47,11 @@
         const confirmation = document.getElementById('confirmation');
 
         form.addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent page reload
-
-            // Get form values
+            e.preventDefault();
             const name = document.getElementById('name').value;
             const event = document.getElementById('event').value;
-
-            // Show confirmation page
             document.getElementById('confName').textContent = name;
             document.getElementById('confEvent').textContent = event;
-
             formContainer.style.display = 'none';
             confirmation.style.display = 'block';
         });
@@ -69,4 +64,3 @@
     </script>
 </body>
 </html>
-
